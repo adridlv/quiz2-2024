@@ -45,3 +45,5 @@ Xpath es un lenguaje de rutas de XML. Sirve para poder realizar criterios de bus
    - Seleccionar el input: ```//*[@id="tablepress-1_filter"]/label[text()='Search:']/input```. Se ha añadido el texto del label porque no hay ningún otro identificador y para evitar que si la web añade más inputs esto falle.
    - Si el siguiente xpath devuelve algun matcheo, significa que se está incumpliendo con la condición de que la columna 2 sea windows o mac y la columna 3 sea Edge. ```//tr[not(td[@class='column-2' and text()='windows' or text()='mac']) and td[@class='column-3' and text()='Edge']]```
    - Posibles problemas que se han detectado: La tabla tiene paginado en el que solo se pueden visualizar 10 elementos por defecto. Para ello se debería utilizar un Cypress o Selenium que pueda hacer la paginación.
+
+**Haciendo cambios para que se puedan ver desde el cherry-pick en el ejercicio3**
