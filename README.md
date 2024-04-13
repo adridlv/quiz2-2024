@@ -62,6 +62,7 @@ https://selectorshub.com/xpath-practice-page/
    - Si el siguiente xpath devuelve algun matcheo, significa que se está incumpliendo con la condición de que la columna 2 sea windows o mac y la columna 3 sea Edge. ```//tr[not(td[@class='column-2' and text()='windows' or text()='mac']) and td[@class='column-3' and text()='Edge']]```
    - Posibles problemas que se han detectado: La tabla tiene paginado en el que solo se pueden visualizar 10 elementos por defecto. Para ello se debería utilizar un Cypress o Selenium que pueda hacer la paginación.
 
+**Haciendo un cambio para que se vea reflejado en el Ejercicio3 tras el cherry-pick**
 
 ## Ejercicio 3
 
