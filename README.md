@@ -45,6 +45,21 @@ https://selectorshub.com/xpath-practice-page/
 
 4. Indicar los xpaths necesarios para realizar un **caso de prueba** que realice una **búsqueda** sobre el navegador “**Edge**” en la tabla “**System distribution details**” y que **compruebe** que los sistemas operativos son “**windows**” y “**mac**”. Indicar qué **posibles problemas** se han encontrado en la aplicación para intentar **asegurar** que las **comprobaciones** son **correctas**, si es que se ha encontrado alguno, e indicar **posibles soluciones**.
 
+### Respuestas
+1.
+   - Se espera que se devuelva un input de type 'checkbox' que esté en cualquier nivel contenido dentro de un div con class 'elementor-shortcode'
+   - En la web se devuelven los 10 checkbox dentro de System Distribution Details. Se ha averiguado haciendo uso del Inspector de elementos del navegador y, haciendo un CTRL+F, poniendo en el buscador el xpath indicado.
+2.  
+   - La primera mala práctica es estar haciendo uso de la ruta completa, además de no ser necesario ese href.
+   - Se podría simplificar en este caso de la siguiente manera: ```//table[@id='resultTable']//td/a```. De esta manera solo devolvería los nombres. En el caso de que la web cambiara, habría que indicar también algún identificador propio de esos elementos. Por ejemplo haciendo uso del atributo ```rel="noopener"```. Ejemplo: ```//table[@id='resultTable']//td/a[@rel='noopener']```
+3.  
+   - Email: Al tratarse de un id dinámico se debe hacer uso de otros atributos, analizando el elemento se ha verificado que uno de los atributos identificativos y estáticos es el dataid. ```//input[@dataid="sh_email1"]```
+   - Password: ``//input[@id="pass"]```
+   - Company: Al tratarse de un elemento que se repite en 4 ocasiones, pero en 3 de ellas está en oculto, se ha realizado un xpath en el que el contenedor (div) contenga una class identificativa y además que el atributo "display" no sea "none". Acto seguido se ha buscado también que el input esté contenido y que además tenga el atributo "name" como "company". ```//div[contains(@class,"parent-inline-cont") and not(contains(@style, "display: none"))]//input[@name="company"]```
+   - Mobile number: Igual que el anterior solo que hemos cambiado el name por "mobile number". ```//div[contains(@class,"parent-inline-cont") and not(contains(@style, "display: none"))]//input[@name="mobile number"]```
+
+
+
 ## Ejercicio 3
 
 Imaginemos que el ejercicio 2 lo ha hecho otro compañero. Explicar cómo llevamos a cabo las siguientes acciones:
