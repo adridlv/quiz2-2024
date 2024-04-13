@@ -6,6 +6,17 @@ Crear un repositorio **privado** en Github, con nombre "**Quiz-2024-GrupoX**" (s
 
 Explicar **qué es** el fichero **gitignore**, y crear uno teniendo en cuenta que es un repositorio apto para almacenar código nodejs. Explicar qué se ha incluido en él y por qué.
 
+### Respuesta:
+Teniendo en cuenta que es un gitignore para un proyecto de node, se ha utilizado como base un gitignore de PS.
+Se destacan los siguientes:
+- node_modules: Por la instalación de las librerías de npm
+- package-lock.json: Por la instalación de las librerías de npm
+- dist: Por la transpilación de TS a JS
+- env: Para no subir credenciales ni variables de entorno.
+- .idea y .vscode: Para no subir configuración generada por los IDEs.
+- .DS_store y Thumbs.db: Para no subir ficheros generados por Mac
+- El resto de ficheros son, o bien propios de emergya, o bien se han incluido como buenas prácticas
+
 ## Ejercicio 2
 
 Explicar **qué son** los xpaths y para qué se utilizan.

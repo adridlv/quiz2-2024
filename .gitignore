@@ -1,0 +1,34 @@
+# IDE
+.idea
+.vscode
+
+# Ignore Mac system files
+.DS_store
+Thumbs.db
+
+# Ignore node_modules folder
+node_modules
+
+# Ignore all text files
+*.txt
+
+# Ignore files related to API keys
+env
+
+# Ignore project key
+emergya.properties
+
+#Ignore unit tests coverage
+coverage/
+
+#Ignore sample tests
+src/v1/tests
+
+# Build
+target/
+/test-output/
+.classpath
+.project
+.settings
+package-lock.json
+dist
