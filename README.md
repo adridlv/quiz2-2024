@@ -29,6 +29,7 @@ https://selectorshub.com/xpath-practice-page/
 4. Indicar los xpaths necesarios para realizar un **caso de prueba** que realice una **búsqueda** sobre el navegador “**Edge**” en la tabla “**System distribution details**” y que **compruebe** que los sistemas operativos son “**windows**” y “**mac**”. Indicar qué **posibles problemas** se han encontrado en la aplicación para intentar **asegurar** que las **comprobaciones** son **correctas**, si es que se ha encontrado alguno, e indicar **posibles soluciones**.
 
 ### Respuestas
+Xpath es un lenguaje de rutas de XML. Sirve para poder realizar criterios de busqueda avanzada, siendo bastante rápida y eficaz. Se utilizan para poder seleccionar elementos dentro de un DOM y poder después interactuar con ellos mediante JS/Cypress/Selenium..., etc. 
 1.
    - Se espera que se devuelva un input de type 'checkbox' que esté en cualquier nivel contenido dentro de un div con class 'elementor-shortcode'
    - En la web se devuelven los 10 checkbox dentro de System Distribution Details. Se ha averiguado haciendo uso del Inspector de elementos del navegador y, haciendo un CTRL+F, poniendo en el buscador el xpath indicado.
