@@ -1,0 +1,9 @@
+  - name: Pull Request title naming rules
+  # You may pin to the exact commit or the version.
+  # uses: naveenk1223/action-pr-title@61d8901589966631a2a12f1143f30de25ac8f43f
+  uses: naveenk1223/action-pr-title@v1.0.0
+  with:
+    regex: \[.+\] \[.+\] - .+
+    min_length: 10
+    max_length: -1
+    prefix_case_sensitive: false
